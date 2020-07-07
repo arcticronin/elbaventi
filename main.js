@@ -1,5 +1,5 @@
 //API
-let apiKey = "b206d46d890589c41e3d52d3ae205375";
+let apiKey = "";//qui, tra le parentesi ci devi mettere la chiava che ottieni con la registrazione gratuita al sito openweathermap.org
 let city = "Portoferraio";
 let uri = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
 
