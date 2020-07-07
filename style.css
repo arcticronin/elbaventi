@@ -1,0 +1,94 @@
+@import url('https::fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap');
+
+*
+{
+  margin:0;
+  padding:0;
+  font-family: 'Poppins';
+}
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #040d15;
+}
+.result, #poppaVento{
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+}
+a
+{
+  position:relative;
+  display: inline-block;
+  padding: 12px 36px;
+  margin: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 18px;
+  letter-spacing: 2px;
+  border-radius: 40px;
+  overflow: hidden;
+  background : linear-gradient( 90deg, #755bea,#ff72c0);
+}
+a:nth-child(n+2)
+{
+  background: linear-gradient(90deg,#0b7a59,#00e6a1);
+}
+
+.nonesiste{
+  background: linear-gradient(90deg,#9e3f00,#ff9823);
+  background: linear-gradient(90deg,#0162c8,#55e7fc);
+}
+
+.luca-log{color: rgba(255, 255, 255, 0.2);
+  font-size: 8pt;
+  font-family: Arial, sans-serif;
+}
+
+#parola-da-ind{
+  text-align: center;
+  font-family: 'Poppins';
+  text-transform: uppercase;
+  position:relative;
+  padding: 12px 36px;
+  margin: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  letter-spacing: 2px;
+  display: none;
+  overflow: hidden;
+}
+
+span{
+  position: absolute;
+  background: #fff;
+  transform: translate(-50%,-50%);
+  pointer-events: none;
+  border-radius: 50%;
+  animation: animate 1s linear infinite;
+}
+@keyframes animate
+{
+  0%
+  {
+    width: 0px;
+    height: 0px;
+    opacity: 0.5;
+  }
+  100%
+  {
+    width: 500px;
+    height: 500px;    
+    opacity: 0;
+  }
+}
+hr {
+    margin: 10px -16px;
+}
