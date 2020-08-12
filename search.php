@@ -3,7 +3,7 @@
   //$devocercare = isset($_POST['action'])
   $servername = "localhost";
   $username = "root";
-  $password = "";
+  $password = "7fb58c199eae5340cb4c594903dd3441";
   $messages = array();
   $parola = '';
 

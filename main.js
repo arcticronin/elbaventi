@@ -1,7 +1,7 @@
 //API
 let apiKey = "";//qui, tra le parentesi ci devi mettere la chiava che ottieni con la registrazione gratuita al sito openweathermap.org
 let city = "Portoferraio";
-let uri = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
+let uri = "https://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + apiKey;
 
 (document.getElementById("oggi")).addEventListener("click", funz);
 
@@ -23,27 +23,57 @@ function funz() {
     request.send();
 }
 
-function intToWind (degrees){
-  var vento="";
-  if (degrees<= 22.5 || degrees > 337.5)
-    vento = "Tramontana";
-  else if (degrees> 22.5 && degrees <= 67.5 )
-    vento = "Grecale";
-  else if (degrees> 67.5 && degrees <= 112.5 )
-    vento = "Levante"; 
-  else if (degrees> 112.5 && degrees <= 157.5 )
-    vento = "Scirocco"; 
-  else if (degrees> 157.5 && degrees <= 202.5 )
-    vento = "Mezzogiorno"; 
-  else if (degrees> 202.5 && degrees <= 247.5 )
-    vento = "Libeccio"; 
-  else if (degrees> 247.5 && degrees <= 292.5 )
-    vento = "Levante"; 
-  else if (degrees> 292.5 && degrees <= 337.5 )
-    vento = "Levante"; 
-  return vento;
+var a = document.createElement('a');
+var linkText = document.createTextNode("Esplora le spiagge consigliate!");
+a.appendChild(linkText);
+a.title = "Esplora le spiagge consigliate!";
 
+
+  function intToWind (degrees){
+  var vento="";
+  
+  
+  document.body.appendChild(a);
+
+
+  if (degrees<= 22.5 || degrees > 337.5){
+    vento = "Tramontana";
+    a.href = "http://example.com";
+  }
+  else if (degrees> 22.5 && degrees <= 67.5 ){
+    vento = "Grecale";
+    a.href = "http://example.com";
+  }
+  else if (degrees> 67.5 && degrees <= 112.5 ){
+    vento = "Levante";
+    a.href = "http://example.com";
+   }
+  else if (degrees> 112.5 && degrees <= 157.5 ){
+    vento = "Scirocco"; 
+    a.href = "http://example.com";
+  }
+  else if (degrees> 157.5 && degrees <= 202.5 ){
+    vento = "Mezzogiorno"; 
+    a.href = "http://example.com";
+  }
+  else if (degrees> 202.5 && degrees <= 247.5 ){
+    vento = "Libeccio"; 
+    a.href = "http://example.com";
+  }
+  else if (degrees> 247.5 && degrees <= 292.5 ){
+    vento = "Levante"; 
+    a.href = "http://LINKLEVANTE.com";
+  }
+  else if (degrees> 292.5 && degrees <= 337.5 ){
+    vento = "Levante"; 
+    a.href = "http://example.com";
+  }
+  return vento;
+  //modifiche da testare
+  document.body.appendChild(a);
+  //fine modifiche
 }
+
 
 
 
